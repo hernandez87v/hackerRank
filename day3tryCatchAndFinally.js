@@ -5,13 +5,17 @@
  * Use console.log() to print to stdout.
  */
 function reverseString(s) {
-  var splitString = s.split('');
+  try {
+    var splitString = s.split('');
 
-  var reverseArray = splitString.reverse();
+    var reverseArray = splitString.reverse();
 
-  var joinArray = reverseArray.join('');
+    var joinArray = reverseArray.join('');
 
-  return joinArray;
+    return joinArray;
+  } catch (e) {
+    console.log(e.message);
+  }
 }
 
-console.log(reverseString('1234'));
+console.log(reverseString(1234));
