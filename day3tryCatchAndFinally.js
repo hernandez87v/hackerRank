@@ -15,7 +15,8 @@ function reverseString(s) {
     return joinArray;
   } catch (e) {
     console.log(e.message);
+    console.log(s);
   }
 }
 
-console.log(reverseString(1234));
+console.log(reverseString(4321));
