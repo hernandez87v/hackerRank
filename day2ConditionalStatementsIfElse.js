@@ -19,8 +19,6 @@
 //   return grade;
 // }
 
-// const score = 11;
-
 function getGrade(score) {
   let grade;
   // Write your code here
