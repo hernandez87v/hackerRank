@@ -2,8 +2,6 @@
 /*
  * Complete the Rectangle function
  */
-// let a = 4;
-// let b = 5;
 
 function Rectangle(a, b) {
   var obj = {
