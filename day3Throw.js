@@ -6,14 +6,22 @@
  * If 'a' is negative, throw an Error with the message "Negative Error"
  */
 
-const a = [3, 1, 2, 3];
+// const a = [3, 1, 2, 3];
 
+// function isPositive(a) {
+//   if (a > 0) {
+//     return 'YES';
+//   } else {
+//     throw a === 0 ? new Error('Zero Error') : new Error('Negative Error');
+//   }
+// }
+
+// Cleaner solution ---------------------
 function isPositive(a) {
-  if (a > 0) {
-    return 'YES';
-  } else {
-    throw a === 0 ? new Error('Zero Error') : new Error('Negative Error');
-  }
+  return a > 0 ? 'YES' : a === 0 ? 'Zero Error' : 'Negative Error';
 }
 
-console.log(isPositive(a));
+console.log(isPositive(3));
+console.log(isPositive(1));
+console.log(isPositive(2));
+console.log(isPositive(3));
